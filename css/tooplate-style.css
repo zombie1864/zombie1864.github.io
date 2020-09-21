@@ -93,6 +93,30 @@ p:last-child { margin-bottom: 0; }
 	margin-left: auto;
 }
 
+#react {
+    background-color: #000000a8;
+}
+
+#js {
+    background-color: #000000a8;  
+}
+
+#ruby {
+    background-color: #000000a8;
+}
+
+#html {
+    background-color: #000000a8;
+}
+
+#css {
+    background-color: #000000a8;
+}
+
+#node {
+    background-color: #000000a8;
+}
+
 .tm-main {
     height: 100%;
     min-height: 100vh;
