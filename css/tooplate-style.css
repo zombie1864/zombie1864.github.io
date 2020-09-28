@@ -599,11 +599,86 @@ footer a { color: white; }
             transition: all 0.3s 1s ease-out;
 }
 
-.tm-img-container {
-    cursor: pointer;
-    z-index: -1;
+.tm-slider-img {
+    /* width: 20px; */
+    height: 500px;
 }
 
+.img-fluid {
+    cursor: pointer;
+}
+
+.live-links {
+    position: relative;
+    letter-spacing: 2px;
+    top: 20px;
+    left: 435px;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 30px;
+    border: solid 2px black;
+    background-color: rgb(231, 82, 22);
+    font-size: 16px;
+    font-family: Helvetica;
+    color: rgb(253, 236, 0);
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgb(231, 82, 22), 0 0 40px rgb(231, 82, 22), 0 0 90px rgb(231, 82, 22); 
+    overflow: visible;
+
+}
+
+.live-links:hover {
+    background-color: rgb(48, 255, 7);
+    box-shadow: 0 0 10px rgb(48, 255, 7), 0 0 40px rgb(48, 255, 7), 0 0 90px rgb(48, 255, 7); 
+}
+
+.jsx {
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.MERN {
+    width: 94%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.Physics_JS {
+    width: 89%;
+    position: relative;
+    top:17px;
+    margin: 0 auto;
+}
+
+
+.physics_link {
+    position: relative;
+    letter-spacing: 2px;
+    top: 37px;
+    left: 435px;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 30px;
+    border: solid 2px black;
+    background-color: rgb(231, 82, 22);
+    font-size: 16px;
+    font-family: Helvetica;
+    color: rgb(253, 236, 0);
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgb(231, 82, 22), 0 0 40px rgb(231, 82, 22), 0 0 90px rgb(231, 82, 22); 
+    overflow: visible;
+
+}
+
+.physics_link:hover {
+    background-color: rgb(48, 255, 7);
+    box-shadow: 0 0 10px rgb(48, 255, 7), 0 0 40px rgb(48, 255, 7), 0 0 90px rgb(48, 255, 7); 
+}
 
 /* JavaScript Turned Off */
 .no-js #loader-wrapper {

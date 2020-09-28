@@ -105,16 +105,16 @@ http://www.tooplate.com/view/2102-constructive
 							<div class="tm-img-container">
 								<div class="tm-img-slider">
 									<p class="tm-slider-img">
-										<img href="img/JSX_Screen_Shot.jpg" src="img/JSX_Screen_Shot.jpg" alt="Image" class="img-fluid">
+										<img href="img/JSX_Screen_Shot.jpg"src="img/JSX_Screen_Shot.jpg" alt="Image" class="img-fluid jsx">
 										<a href="https://jsx-space-time.herokuapp.com/#/" target="_blank" class = 'live-links'>Live Site</a>
 									</p>
 									<p class="tm-slider-img">
-										<img href="img/MERN_Screen_Shot.png" src="img/MERN_Screen_Shot.png" alt="Image" class="img-fluid">
+										<img href="img/MERN_Screen_Shot.png" src="img/MERN_Screen_Shot.png" alt="Image" class="img-fluid MERN">
 										<a href="https://muse-of-wire.herokuapp.com" target="_blank" class = 'live-links'>Live Site</a>
 									</p>
 									<p class="tm-slider-img">
-										<img href="img/Physics_JS_Screen_Shot.png" src="img/Physics_JS_Screen_Shot.png" alt="Image" class="img-fluid">
-										<a href="https://zombie1864.github.io/Physics_JS/" target="_blank" class = 'live-links'>Live Site</a>
+										<img href="img/Physics_JS_Screen_Shot.png" src="img/Physics_JS_Screen_Shot.png" alt="Image" class="img-fluid Physics_JS">
+										<a href="https://zombie1864.github.io/Physics_JS/" target="_blank" class = 'live-links physics_link'>Live Site</a>
 									</p>
 								</div>
 							</div>		            		          
@@ -458,7 +458,7 @@ http://www.tooplate.com/view/2102-constructive
 				if(windowWidth < 640) {
 					slider.slick({
 	              		dots: true,
-	              		infinite: false,
+	              		infinite: true,
 	              		slidesToShow: 1,
 	              		slidesToScroll: 1
 	              	});
@@ -466,8 +466,8 @@ http://www.tooplate.com/view/2102-constructive
 				else if(windowWidth < 992) {
 					slider.slick({
 	              		dots: true,
-	              		infinite: false,
-	              		slidesToShow: 2,
+	              		infinite: true,
+	              		slidesToShow: 1,
 	              		slidesToScroll: 1
 	              	});
 				}
@@ -475,7 +475,7 @@ http://www.tooplate.com/view/2102-constructive
 					// Slick carousel
 	              	slider.slick({
 	              		dots: true,
-	              		infinite: false,
+	              		infinite: true,
 	              		slidesToShow: 1,
 	              		slidesToScroll: 1
 	              	});
