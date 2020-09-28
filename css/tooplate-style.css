@@ -599,6 +599,12 @@ footer a { color: white; }
             transition: all 0.3s 1s ease-out;
 }
 
+.tm-img-container {
+    cursor: pointer;
+    z-index: -1;
+}
+
+
 /* JavaScript Turned Off */
 .no-js #loader-wrapper {
     display: none;
