@@ -264,7 +264,7 @@ p:last-child { margin-bottom: 0; }
 .col-md-6.tm-contact-col { margin-bottom: 0; }
 
 .tm-img-slider { max-width: 940px; }
-#tm-section-1 { max-width: 600px; }
+#tm-section-1 { max-width: 700px; }
 
 .tm-icon-media {
   margin-right: 1.5rem;
@@ -715,6 +715,10 @@ footer a { color: white; }
 #contact_me_container {
     background-color: #000000c4;
 
+}
+
+body {
+    overflow: hidden;
 }
 
 /* JavaScript Turned Off */
