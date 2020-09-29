@@ -684,6 +684,39 @@ footer a { color: white; }
     z-index: 1;
 }
 
+.resume_contact:before {
+    content: 'resume!';
+    position: absolute;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.resume_contact {
+    /* color: #e81d1d;  */
+    color: rgb(255, 255, 255); 
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
+                 0 0 80px #ff0000, 0 0 160px #ff0000;
+}
+
+/* .resume_contact:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: red;
+} */
+
+
 .physics_link:hover {
     background-color: rgb(48, 255, 7);
     box-shadow: 0 0 10px rgb(48, 255, 7), 0 0 40px rgb(48, 255, 7), 0 0 90px rgb(48, 255, 7); 
