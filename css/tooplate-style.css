@@ -90,7 +90,7 @@ p:last-child { margin-bottom: 0; }
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-right: auto;
-	margin-left: auto;
+    margin-left: auto;
 }
 
 #react {
@@ -700,21 +700,11 @@ footer a { color: white; }
 }
 
 .resume_contact {
-    /* color: #e81d1d;  */
     color: rgb(255, 255, 255); 
     text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
                  0 0 80px #ff0000, 0 0 160px #ff0000;
 }
 
-/* .resume_contact:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: red;
-} */
 
 
 .physics_link:hover {
