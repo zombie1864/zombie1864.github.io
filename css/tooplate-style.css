@@ -674,6 +674,16 @@ footer a { color: white; }
 
 }
 
+.contact_links {
+    position: relative;
+    float: left;
+   left: 220px;
+}
+
+#angel_contact {
+    z-index: 1;
+}
+
 .physics_link:hover {
     background-color: rgb(48, 255, 7);
     box-shadow: 0 0 10px rgb(48, 255, 7), 0 0 40px rgb(48, 255, 7), 0 0 90px rgb(48, 255, 7); 
