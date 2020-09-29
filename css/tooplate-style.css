@@ -600,7 +600,6 @@ footer a { color: white; }
 }
 
 .tm-slider-img {
-    /* width: 20px; */
     height: 500px;
 }
 
@@ -678,6 +677,11 @@ footer a { color: white; }
 .physics_link:hover {
     background-color: rgb(48, 255, 7);
     box-shadow: 0 0 10px rgb(48, 255, 7), 0 0 40px rgb(48, 255, 7), 0 0 90px rgb(48, 255, 7); 
+}
+
+#contact_me_container {
+    background-color: #000000c4;
+
 }
 
 /* JavaScript Turned Off */
