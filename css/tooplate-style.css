@@ -91,6 +91,7 @@ p:last-child { margin-bottom: 0; }
 	flex-wrap: wrap;
 	margin-right: auto;
     margin-left: auto;
+    display:-ms-flexbox;
 }
 
 #react {
