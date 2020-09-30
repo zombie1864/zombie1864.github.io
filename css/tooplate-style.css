@@ -718,7 +718,7 @@ footer a { color: white; }
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* JavaScript Turned Off */
