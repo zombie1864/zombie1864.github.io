@@ -678,6 +678,7 @@ footer a { color: white; }
 .contact_links {
     position: relative;
     float: left;
+    width: 33%;
    left: 220px;
 }
 
