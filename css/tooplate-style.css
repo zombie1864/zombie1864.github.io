@@ -679,7 +679,10 @@ footer a { color: white; }
     position: relative;
     float: left;
     width: 33%;
-   left: 220px;
+    margin: 0 auto;
+    /* left: 220px; */
+    left: 50%;
+    right: 50%;
 }
 
 #angel_contact {
