@@ -601,7 +601,8 @@ footer a { color: white; }
 }
 
 .tm-slider-img {
-    height: 500px;
+    position: relative;
+    height: 65vh;
 }
 
 .img-fluid {
@@ -721,6 +722,7 @@ footer a { color: white; }
     background-color: #000000c4;
 
 }
+
 
 body {
     /* overflow: hidden; */
