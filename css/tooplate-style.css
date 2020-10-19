@@ -82,7 +82,7 @@ p:last-child { margin-bottom: 0; }
     height: 100px;
 }
 
-.tm-font-big { font-size: 1.3rem; }
+.tm-font-big { font-size: 1.1vw; }
 
 .row {
 	display: -ms-flexbox;
