@@ -724,6 +724,11 @@ footer a { color: white; }
 
 }
 
+.intro-section {
+    height: 65vh;
+    width: 65vh;
+    overflow: auto;
+}
 
 body {
     overflow: hidden;
