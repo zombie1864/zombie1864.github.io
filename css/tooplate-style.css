@@ -725,6 +725,7 @@ footer a { color: white; }
 }
 
 .intro-section {
+    padding-left: 10px;
     height: 65vh;
     width: 65vh;
     overflow: auto;
