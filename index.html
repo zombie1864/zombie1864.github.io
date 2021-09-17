@@ -1,609 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Portfolio Site" />
-	<meta name="title" property="og:title" content="Portfolio" />
-	<meta property="og:type" content="website" />
-	<meta name="image" property="og:image" content="https://live.staticflickr.com/65535/50427535303_144f9e8c2a_z.jpg" />
-	<meta name="description" property="og:description" content="Portfolio Site" /><meta name="author" content="Jeff Varela" />
-
-	<title>Jeff Varela</title>
-<!--
-
-Template 2102 Constructive
-
-http://www.tooplate.com/view/2102-constructive
-
--->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-	<link rel="stylesheet" href="css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/tooplate-style.css">
-	<link rel="icon" type = 'image/png' href="./img/information.png">
-
-	<script>
-		var renderPage = true;
-
-	if(navigator.userAgent.indexOf('MSIE')!==-1
-		|| navigator.appVersion.indexOf('Trident/') > 0){
-   		/* Microsoft Internet Explorer detected in. */
-   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
-   		renderPage = false;
-	}
-	</script>
-</head>
-
-<body>
-	<!-- Loader -->
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-	</div>
-	
-	<!-- Page Content -->
-	<div class="container-fluid tm-main">
+	<head>
+		<meta charset="utf-8">
+		<script src="htmlMetaTags.js"></script>
+		<script src="./style/dependencies.js"></script>
+		<script src="./utils/dependencies.js"></script>
+		<title>Jeff Varela</title>
+	</head>
+	<body>
+		<!-- Loader -->
+		<script src="./utils/loader.js"></script>
+		
+		<!-- Page Content -->
+		<div class="container-fluid tm-main">
 		<div class="row tm-main-row">
-
-			<!-- Sidebar -->
-			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
-
-				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
-
-				<div class="inner">
-					<nav id="tmMainNav" class="tm-main-nav">
-						<ul>
-							<li>
-								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="Home_Page.jpg" data-page="#tm-section-1">
-									<i class="fas fa-home tm-nav-fa-icon"></i>
-									<span>Introduction</span>
-								</a>
-							</li>
-							<li>
-								<a href="#company" id="tmNavLink2" class="scrolly" data-bg-img="Experience_page.jpg" data-page="#tm-section-3">
-									<i class="fa fa-user tm-nav-fa-icon"></i>
-									<span>Skills</span>
-								</a>
-							</li>
-							<li>
-								<a href="#products" class="scrolly" data-bg-img="Project_page_2.jpg" data-page="#tm-section-2" data-page-type="carousel">
-									<i class="fas fa-map tm-nav-fa-icon"></i>
-									<span>Projects</span>
-								</a>
-							</li>							
-							<li>
-								<a href="#contact" class="scrolly" data-bg-img="Contact_page.jpg" data-page="#tm-section-4">
-									<i class="fas fa-comments tm-nav-fa-icon"></i>
-									<span>Contact</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
-			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
-
-					<!-- section 1 -->
-					<section id="tm-section-1" class="tm-section_home_page">
-						<!-- <img src="/img/IMG_8795.JPG" alt="Profile pic" class="profile_pic"> -->
-						<div class="ml-auto intro-section">
-							<header class="mb-4">
-								<h1 class="tm-text-shadow">Jeff Varela</h1>
-								<h3 class="tm-text-shadow">Software Engineer | New York, NY</h3>
-							</header>
-							<p class="mb-5 tm-font-big">Hello world, i'm a software engineer with a background in physics based in NY. Science and technology has always been at the forefront of my interest. These passions lead me to develop technical skills in web development, data structures and algorithms, and scientific methodologies to tackle problems. To read more about my passion, skills, and projects please click continue to travel into my world of software engineering!</p>
-							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
-						</div>
-					</section>
-					
-					<!-- section 2 -->
-					<section id="tm-section-3" class="tm-section skill_page tm-section-carousel">						
-						<div class="row mb-4">
-							<header class="col-xl-12"><h2 class="tm-text-shadow">Skills</h2></header>		
-						</div>
-						
-						<div>	            
-							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<div class="row" style=" 
-									display: -ms-flexbox;
-									display: flex;
-									-ms-flex-wrap: wrap;
-									flex-wrap: wrap;
-									margin-right: auto;
-									margin-left: 19px;
-									display:-ms-flexbox;">
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4" id = 'outerBoxInvicibleContainingSkill'>
-											<div class="media tm-bg-transparent-black tm-border-white" id = 'react'>
-												<i class="tm-icon-circled tm-icon-media" id = 'theCircleContainingImgInside'>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="90" height="90" x="0" y="0" viewBox="0 0 820 612"  xml:space="preserve" class="yes1">
-														<g xmlns="http://www.w3.org/2000/svg">
-															<path fill="#61DAFB" d="M666.3,296.5c0-32.5-40.7-63.3-103.1-82.4c14.4-63.6,8-114.2-20.2-130.4c-6.5-3.8-14.1-5.6-22.4-5.6v22.3   c4.6,0,8.3,0.9,11.4,2.6c13.6,7.8,19.5,37.5,14.9,75.7c-1.1,9.4-2.9,19.3-5.1,29.4c-19.6-4.8-41-8.5-63.5-10.9   c-13.5-18.5-27.5-35.3-41.6-50c32.6-30.3,63.2-46.9,84-46.9l0-22.3c0,0,0,0,0,0c-27.5,0-63.5,19.6-99.9,53.6   c-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7,0,51.4,16.5,84,46.6c-14,14.7-28,31.4-41.3,49.9c-22.6,2.4-44,6.1-63.6,11   c-2.3-10-4-19.7-5.2-29c-4.7-38.2,1.1-67.9,14.6-75.8c3-1.8,6.9-2.6,11.5-2.6l0-22.3c0,0,0,0,0,0c-8.4,0-16,1.8-22.6,5.6   c-28.1,16.2-34.4,66.7-19.9,130.1c-62.2,19.2-102.7,49.9-102.7,82.3c0,32.5,40.7,63.3,103.1,82.4c-14.4,63.6-8,114.2,20.2,130.4   c6.5,3.8,14.1,5.6,22.5,5.6c27.5,0,63.5-19.6,99.9-53.6c36.4,33.8,72.4,53.2,99.9,53.2c8.4,0,16-1.8,22.6-5.6   c28.1-16.2,34.4-66.7,19.9-130.1C625.8,359.7,666.3,328.9,666.3,296.5z M536.1,229.8c-3.7,12.9-8.3,26.2-13.5,39.5   c-4.1-8-8.4-16-13.1-24c-4.6-8-9.5-15.8-14.4-23.4C509.3,224,523,226.6,536.1,229.8z M490.3,336.3c-7.8,13.5-15.8,26.3-24.1,38.2   c-14.9,1.3-30,2-45.2,2c-15.1,0-30.2-0.7-45-1.9c-8.3-11.9-16.4-24.6-24.2-38c-7.6-13.1-14.5-26.4-20.8-39.8   c6.2-13.4,13.2-26.8,20.7-39.9c7.8-13.5,15.8-26.3,24.1-38.2c14.9-1.3,30-2,45.2-2c15.1,0,30.2,0.7,45,1.9   c8.3,11.9,16.4,24.6,24.2,38c7.6,13.1,14.5,26.4,20.8,39.8C504.7,309.8,497.8,323.2,490.3,336.3z M522.6,323.3   c5.4,13.4,10,26.8,13.8,39.8c-13.1,3.2-26.9,5.9-41.2,8c4.9-7.7,9.8-15.6,14.4-23.7C514.2,339.4,518.5,331.3,522.6,323.3z    M421.2,430c-9.3-9.6-18.6-20.3-27.8-32c9,0.4,18.2,0.7,27.5,0.7c9.4,0,18.7-0.2,27.8-0.7C439.7,409.7,430.4,420.4,421.2,430z    M346.8,371.1c-14.2-2.1-27.9-4.7-41-7.9c3.7-12.9,8.3-26.2,13.5-39.5c4.1,8,8.4,16,13.1,24C337.1,355.7,341.9,363.5,346.8,371.1z    M420.7,163c9.3,9.6,18.6,20.3,27.8,32c-9-0.4-18.2-0.7-27.5-0.7c-9.4,0-18.7,0.2-27.8,0.7C402.2,183.3,411.5,172.6,420.7,163z    M346.7,221.9c-4.9,7.7-9.8,15.6-14.4,23.7c-4.6,8-8.9,16-13,24c-5.4-13.4-10-26.8-13.8-39.8C318.6,226.7,332.4,224,346.7,221.9z    M256.2,347.1c-35.4-15.1-58.3-34.9-58.3-50.6c0-15.7,22.9-35.6,58.3-50.6c8.6-3.7,18-7,27.7-10.1c5.7,19.6,13.2,40,22.5,60.9   c-9.2,20.8-16.6,41.1-22.2,60.6C274.3,354.2,264.9,350.8,256.2,347.1z M310,490c-13.6-7.8-19.5-37.5-14.9-75.7   c1.1-9.4,2.9-19.3,5.1-29.4c19.6,4.8,41,8.5,63.5,10.9c13.5,18.5,27.5,35.3,41.6,50c-32.6,30.3-63.2,46.9-84,46.9   C316.8,492.6,313,491.7,310,490z M547.2,413.8c4.7,38.2-1.1,67.9-14.6,75.8c-3,1.8-6.9,2.6-11.5,2.6c-20.7,0-51.4-16.5-84-46.6   c14-14.7,28-31.4,41.3-49.9c22.6-2.4,44-6.1,63.6-11C544.3,394.8,546.1,404.5,547.2,413.8z M585.7,347.1c-8.6,3.7-18,7-27.7,10.1   c-5.7-19.6-13.2-40-22.5-60.9c9.2-20.8,16.6-41.1,22.2-60.6c9.9,3.1,19.3,6.5,28.1,10.2c35.4,15.1,58.3,34.9,58.3,50.6   C644,312.2,621.1,332.1,585.7,347.1z"/>
-															<circle fill="#61DAFB" cx="420.9" cy="296.5" r="45.7"/>
-														</g>
-													</i>
-												<div class="media-body">
-													<h3>React / Redux </h3>
-													<p>Frontend developement skill for UI friendly experience in making a dynamic websites. Used for all my technical projects.</p>	
-												</div>
-											</div>
-										</div>								
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-											<div class="media tm-bg-transparent-black tm-border-white" id="js">
-												<i class="fab fa-js-square tm-icon-circled tm-icon-media"></i>
-												<div class="media-body">
-													<h3>JavaScript</h3>
-													<p>Frontend language used to built the logisics of a website. I have also used Nodejs for backend developement.</p>	
-												</div>
-											</div>
-										</div>	
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-											<div class="media tm-bg-transparent-black tm-border-white" id="ruby">
-												<i class="tm-icon-circled tm-icon-media">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="112" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" class="">
-														<g>
-															<path xmlns="http://www.w3.org/2000/svg" style="" d="M512,256c0,141.385-114.615,256-256,256c-86.298,0-162.628-42.705-209-108.136c0,0,0,0-0.01,0  c-11.786-16.635-21.64-34.732-29.226-53.979c-3.835-9.728-7.095-19.738-9.728-30.009c0,0,0,0,0-0.01C2.79,299.447,0,278.047,0,256  C0,114.615,114.615,0,256,0c79.182,0,149.964,35.944,196.911,92.411c16.959,20.376,30.804,43.426,40.814,68.42  C505.511,190.255,512,222.375,512,256z" fill="#ffffff00" data-original="#f2f2f2" class=""/>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M493.725,160.831c-0.021,0.199-0.042,0.408-0.063,0.616c-1.411,12.654-5.402,26.269-11.776,40.396  l-0.01,0.01L371.66,482.304L76.455,413.069c-3.626-0.711-7.147-1.536-10.553-2.476c-6.781-1.839-13.093-4.086-18.902-6.729  c0,0,0,0-0.01,0c-17.742-25.046-31.107-53.415-38.954-83.989c0.878-3.668,2.288-9.331,4.148-16.29  c7.168-26.843,21.096-72.85,37.836-97.04l1.63,55.965l110.299,7.356l149.514-71.084l64.543-94.772l-28.588-45.756  c47.689,11.567,77.908,22.016,96.935,30.26c3.156,1.358,5.998,2.664,8.558,3.897c19.111,9.226,22.779,14.838,22.779,14.838  c6.301,5.308,11.024,11.536,13.897,18.662C493.767,136.255,495.073,148.052,493.725,160.831z" fill="#9b0a0e" data-original="#9b0a0e"/>
-														<ellipse xmlns="http://www.w3.org/2000/svg" transform="matrix(-0.4527 -0.8917 0.8917 -0.4527 159.2264 416.755)" style="" cx="207.517" cy="159.51" rx="74.147" ry="167.273" fill="#ef0e13" data-original="#ef0e13" class=""/>
-														<g xmlns="http://www.w3.org/2000/svg">
-															<path style="" d="M301.18,369.117l70.476,113.191l-185.652-72.87C222.656,401.872,262.012,388.497,301.18,369.117z" fill="#f5655e" data-original="#f5655e"/>
-															<path style="" d="M50.019,206.546l1.634,55.966l-39.47,41.072C19.356,276.744,33.278,230.737,50.019,206.546z" fill="#f5655e" data-original="#f5655e"/>
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-															<path style="" d="M51.649,262.51l-33.886,87.374c-3.835-9.728-7.095-19.738-9.728-30.009c0,0,0,0,0-0.01   c0.888-3.668,2.288-9.331,4.148-16.279L51.649,262.51z" fill="#950c10" data-original="#950c10"/>
-															<path style="" d="M376.012,104.009l117.651,57.437c-1.414,12.656-5.4,26.268-11.781,40.402l-0.008,0.008   c-4.771,10.589-10.891,21.472-18.261,32.452L376.012,104.009z" fill="#950c10" data-original="#950c10"/>
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-															<path style="" d="M481.873,201.857L371.657,482.307l28.228-177.874c26.422-22.607,47.951-46.595,63.728-70.125   C470.983,223.327,477.101,212.444,481.873,201.857z" fill="#ef0e13" data-original="#ef0e13" class=""/>
-															<polygon style="" points="376.012,104.009 463.613,234.308 311.466,198.785  " fill="#ef0e13" data-original="#ef0e13" class=""/>
-														</g>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M444.355,88.51l-68.344,15.499l-28.596-45.761C395.105,69.825,425.327,80.267,444.355,88.51z" fill="#f5655e" data-original="#f5655e"/>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M311.466,198.785l88.418,105.65c-26.594,22.762-58.139,44.127-93.786,62.225  c-1.643,0.834-3.276,1.65-4.918,2.46L311.466,198.785z" fill="#950c10" data-original="#950c10"/>
-														<polygon xmlns="http://www.w3.org/2000/svg" style="" points="311.466,198.785 301.18,369.117 161.951,269.865 " fill="#ef0e13" data-original="#ef0e13" class=""/>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M161.951,269.865l139.228,99.252c-39.168,19.38-78.524,32.754-115.176,40.321L161.951,269.865z" fill="#950c10" data-original="#950c10"/>
-														<polygon xmlns="http://www.w3.org/2000/svg" style="" points="161.951,269.865 65.902,410.598 51.653,262.512 " fill="#f5655e" data-original="#f5655e"/>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-													</g>
-												</svg>
-											</i>
-											<div class="media-body">
-												<h3>Ruby on Rails</h3>
-												<p>MVC framework that was used for my fullstack application. Works in conjunction with React/ Redux</p>	
-												</div>
-											</div>
-										</div>	
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-											<div class="media tm-bg-transparent-black tm-border-white" id="node">
-												<i class="tm-icon-circled tm-icon-media">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="112" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" class="">
-														<g>
-															<path xmlns="http://www.w3.org/2000/svg" style="" d="M512,256c0,141.385-114.615,256-256,256C125.555,512,17.899,414.438,2.027,288.298  C0.69,277.723,0,266.94,0,256c0-20.041,2.299-39.549,6.656-58.264C33.029,84.428,134.656,0,256,0  c121.041,0,222.469,84.01,249.135,196.901c3.5,14.764,5.705,30.02,6.51,45.641C511.885,247.003,512,251.486,512,256z" fill="#ffffff" data-original="#f2f2f2" class=""/>
-														<polygon xmlns="http://www.w3.org/2000/svg" style="" points="243.195,276.559 243.195,210 185.553,176.721 127.912,210 127.912,276.559 185.553,309.838   " fill="#3b8739" data-original="#3b8739"/>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M470.204,266.459l37.564,21.692l-37.564,21.692l-57.637-33.28v-66.56l57.637-33.28l34.931,20.177  c3.5,14.764,5.705,30.02,6.51,45.641l-21.358,12.33v-23.186l-20.083-11.588l-20.083,11.588v23.186L470.204,266.459z" fill="#333333" data-original="#333333" class=""/>
-														<polygon xmlns="http://www.w3.org/2000/svg" style="" points="481.392,249.74 481.392,236.82 470.203,230.36 459.013,236.82 459.013,249.74   470.203,256.201 " fill="#66a060" data-original="#66a060"/>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M100.686,210.004v87.771l-38.442-21.932v-44.993L43.05,219.763l-19.195,11.086v44.993L2.027,288.298  C0.69,277.723,0,266.94,0,256c0-20.041,2.299-39.549,6.656-58.264l36.394-21.013L100.686,210.004z" fill="#333333" data-original="#333333" class=""/>
-														<rect xmlns="http://www.w3.org/2000/svg" x="127.906" y="210.001" transform="matrix(0.5 0.866 -0.866 0.5 303.4564 -39.0495)" style="" width="115.281" height="66.557" fill="#6da75d" data-original="#6da75d"/>
-														<polygon xmlns="http://www.w3.org/2000/svg" style="" points="127.912,276.559 147.704,244.283 127.912,210 " fill="#55a344" data-original="#55a344"/>
-														<polygon xmlns="http://www.w3.org/2000/svg" style="" points="223.979,243.277 243.195,210 185.553,176.721 " fill="#639d57" data-original="#639d57" class=""/>
-														<path xmlns="http://www.w3.org/2000/svg" style="" d="M346.551,99.579v88.304l-19.32-11.16l-57.647,33.28v66.56l57.647,33.28l57.637-33.28V120.09  L346.551,99.579z M346.446,254.37l-19.216,11.097l-19.216-11.097v-22.183l19.216-11.097l19.216,11.097V254.37z" fill="#333333" data-original="#333333" class=""/>
-														<g xmlns="http://www.w3.org/2000/svg">
-															<path style="" d="M282.149,358.717c0,0-1.132-9.729-11.539-9.729c-10.408,0-17.534,1.357-17.534,7.127   s20.25,5.77,27.943,8.032c7.693,2.262,14.48,8.145,11.086,18.553c-3.394,10.408-13.802,11.539-29.866,11.539   s-19.685-13.35-19.685-18.553h9.05c0,0-1.132,8.145,9.502,9.502c10.634,1.357,20.802,2.121,22.173-6.108   c1.81-10.861-34.391-5.43-37.559-16.064c-2.676-8.985-1.132-20.815,16.969-22.626c18.101-1.811,28.056,6.181,28.056,18.101   L282.149,358.717z" fill="#66a060" data-original="#66a060"/>
-															<path style="" d="M194.723,401.131l20.008,11.551c10.053,5.804,22.619-1.451,22.619-13.059v-20.242v-37.253h-8.155   v55.227c0,6.339-6.862,10.302-12.353,7.131l-13.965-8.062v-58.94l51.043-29.467l51.043,29.467v58.94l-51.043,29.467l-14.704-8.489   l-9.602,3.872l24.305,14.033l59.198-34.179v-68.351L253.92,298.6l-59.198,34.179v68.352H194.723z" fill="#66a060" data-original="#66a060"/>
-														</g>
-													</svg>
-												</i>
-												<div class="media-body">
-													<h3>NodeJS</h3>
-													<p>Backend framework that runs javascript outside the browser. Used for my MERN stack project.</p>	
-												</div>
-											</div>
-										</div>	
+		
+		<!-- Sidebar -->
+		<script src="./utils/sideBar.js"></script>
+		
+		<!-- content -->
+		<div id="section1" class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">		
 			
-									</div>										
-									<div class="row">
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-											<div class="media tm-bg-transparent-black tm-border-white" id="html">
-												<i class="tm-icon-circled tm-icon-media">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="112" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" class="">
-														<g>
-															<path xmlns="http://www.w3.org/2000/svg" style="" d="M512,256c0,82.317-38.86,155.564-99.234,202.397C369.455,492.001,315.068,512,256,512  c-58.535,0-112.473-19.644-155.596-52.705C39.361,412.515,0,338.85,0,256C0,114.615,114.615,0,256,0S512,114.615,512,256z" fill="#ffffff" data-original="#f2f2f2"/>
-															<path xmlns="http://www.w3.org/2000/svg" style="" d="M441.992,119.474l-29.226,338.923C369.455,492.001,315.068,512,256,512  c-58.535,0-112.473-19.644-155.596-52.705L71.105,119.474H441.992z" fill="#e64c18" data-original="#e64c18"/>
-															<polygon xmlns="http://www.w3.org/2000/svg" style="" points="256.546,151.249 256.546,504.167 378.46,469.75 405.655,151.249 " fill="#f36518" data-original="#f36518"/>
-															<polygon xmlns="http://www.w3.org/2000/svg" style="" points="140.903,195.528 152.858,337.091 311.761,337.091 306.562,395.568 256.549,409.112   204.46,394.52 203.152,358.061 154.631,358.061 160.705,429.941 256.549,457.028 352.392,429.941 364.27,289.295 196.928,289.295   192.775,243.456 192.774,243.454 368.226,242.535 372.194,195.528 " fill="#ffffff" data-original="#ffffff"/>
-															<polygon xmlns="http://www.w3.org/2000/svg" points="151.159,16.796 151.159,41.117 127.921,41.117 127.921,16.796 106.303,16.796 106.303,86.513 127.921,86.513   127.921,63.815 151.159,63.815 151.159,86.513 172.777,86.513 172.777,16.796 " fill="#000000" data-original="#000000" style=""/>
-															<polygon xmlns="http://www.w3.org/2000/svg" points="249.521,16.796 183.045,16.796 183.045,41.117 204.663,41.117 204.663,87.055 227.903,87.055 227.903,41.117   249.521,41.117 " fill="#000000" data-original="#000000" style=""/>
-														<polygon xmlns="http://www.w3.org/2000/svg" points="373.284,64.895 373.284,17.337 350.044,17.337 350.044,64.895 350.044,87.055 373.284,87.055 406.79,87.055   406.79,64.895 " fill="#000000" data-original="#000000" style=""/>
-														<polygon xmlns="http://www.w3.org/2000/svg" points="314.914,17.337 298.702,42.197 282.488,17.337 259.249,17.337 259.249,87.055 282.488,87.055 282.488,52.465   298.702,77.327 314.914,52.465 314.914,87.055 338.154,87.055 338.154,17.337 " fill="#000000" data-original="#000000" style=""/>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-													</g>
-													</svg>
-												</i>	
-												<div class="media-body">
-													<h3>HTML 5</h3>
-													<p>Frontend markup language used for my fullstack, MERN, and javascript projects.</p>	
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-											<div class="media tm-bg-transparent-black tm-border-white" id="css">
-												<i class="tm-icon-circled tm-icon-media">
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="112" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve">
-															<g>
-															<path xmlns="http://www.w3.org/2000/svg" style="" d="M512,256c0,82.317-38.86,155.564-99.234,202.397C369.455,492.001,315.068,512,256,512  s-113.455-19.999-156.766-53.603C38.86,411.564,0,338.317,0,256C0,114.615,114.615,0,256,0S512,114.615,512,256z" fill="#ffffff" data-original="#f2f2f2"/>
-															<path xmlns="http://www.w3.org/2000/svg" style="" d="M441.992,119.474l-29.226,338.923C369.455,492.001,315.068,512,256,512  s-113.455-19.999-156.766-53.603L70.008,119.474H441.992z" fill="#006bc0" data-original="#006bc0"/>
-															<polygon xmlns="http://www.w3.org/2000/svg" style="" points="255.997,151.338 255.997,505.296 378.269,470.777 405.545,151.338 " fill="#0096dc" data-original="#0096dc"/>
-															<polygon xmlns="http://www.w3.org/2000/svg" style="" points="364.036,289.787 275.85,289.787 367.999,242.89 371.981,195.746 140.013,195.746   144.072,243.811 237.189,243.811 147.845,288.484 152.002,337.723 152.002,337.723 311.376,337.723 306.152,396.366 255.997,409.95   203.752,395.321 202.446,358.75 153.778,358.75 159.866,430.848 255.997,458.015 352.127,430.848 364.039,289.779 " fill="#ffffff" data-original="#ffffff"/>
-															<g xmlns="http://www.w3.org/2000/svg">
-																<polygon style="" points="165.352,67.224 165.352,33.787 213.417,33.787 213.417,15.676 147.937,15.676    147.937,85.335 213.417,85.335 213.417,67.224  " fill="#222123" data-original="#222123"/>
-																<polygon style="" points="241.542,42.93 241.542,34.57 289.347,34.57 289.347,33.787 289.347,15.676 223.866,15.676    223.866,58.864 270.799,58.864 270.799,67.224 223.866,67.224 223.866,85.335 289.347,85.335 289.347,67.224 289.347,42.93  " fill="#222123" data-original="#222123"/>
-																<polygon style="" points="316.252,42.93 316.252,34.57 364.056,34.57 364.056,33.787 364.056,15.676 298.576,15.676    298.576,58.864 345.509,58.864 345.509,67.224 298.576,67.224 298.576,85.335 364.056,85.335 364.056,67.224 364.056,42.93  " fill="#222123" data-original="#222123"/>
-															</g>
-														</svg>
-												</i>
-												<div class="media-body">
-													<h3>CSS 3</h3>
-													<p>Stylesheet used for my fullstack, MERN, and javascript projects. Aids in manipulating website content</p>		
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-											<div class="media tm-bg-transparent-black tm-border-white" id="SQL">
-												<i class="tm-icon-circled tm-icon-media">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 480 480" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m248 48c0-22.089844-53.726562-40-120-40s-120 17.910156-120 40 53.726562 40 120 40 120-17.910156 120-40zm0 0" fill="#78b9eb" data-original="#78b9eb" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m424 376h-28.121094l2.914063-2.910156c15.984375-15.933594 18.691406-40.863282 6.492187-59.851563-12.199218-18.992187-35.996094-26.898437-57.132812-18.980469-20.746094-34.152343-63.601563-47.617187-100.152344-31.472656-14.96875 6.570313-27.582031 17.550782-36.152344 31.472656-21.136718-7.917968-44.933594-.011718-57.132812 18.980469-12.199219 18.988281-9.492188 43.917969 6.492187 59.851563l2.914063 2.910156h-28.121094c-26.507812 0-48 21.492188-48 48s21.492188 48 48 48h288c26.507812 0 48-21.492188 48-48s-21.492188-48-48-48zm-184-16v-8h-56v40h56v40h-56 56v-40h-56v-40h56zm72 72h-48v-80h56v80h-8l16 16zm88 0h-56v-80 80zm0 0" fill="#78b9eb" data-original="#78b9eb" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m320 352h-56v80h48l-16-16 16 16h8zm0 0" fill="#78b9eb" data-original="#78b9eb" style="" class=""/><g xmlns="http://www.w3.org/2000/svg" fill="#1a6fb0"><path d="m352 344h-8c-4.417969 0-8 3.582031-8 8v80c0 4.417969 3.582031 8 8 8h56c4.417969 0 8-3.582031 8-8v-8h-56zm0 0" fill="#1a6fb0" data-original="#1a6fb0" style="" class=""/><path d="m328 432v-80c0-4.417969-3.582031-8-8-8h-56c-4.417969 0-8 3.582031-8 8v80c0 4.417969 3.582031 8 8 8h44.6875l13.65625 13.65625 11.3125-11.3125-6.664062-6.664062c.636718-1.125.980468-2.386719 1.007812-3.679688zm-56-8v-64h40v60.6875l-10.34375-10.34375-11.3125 11.3125 2.34375 2.34375zm0 0" fill="#1a6fb0" data-original="#1a6fb0" style="" class=""/><path d="m240 344h-56c-4.417969 0-8 3.582031-8 8v48h56v24h-56v8c0 4.417969 3.582031 8 8 8h56c4.417969 0 8-3.582031 8-8v-48h-56v-24h56v-8c0-4.417969-3.582031-8-8-8zm0 0" fill="#1a6fb0" data-original="#1a6fb0" style="" class=""/><path d="m424 368h-11.121094c11.699219-19.367188 10.5625-43.878906-2.875-62.085938-13.441406-18.203124-36.527344-26.507812-58.484375-21.035156-16.414062-23.199218-43.097656-36.957031-71.519531-36.878906-8.121094.042969-16.195312 1.203125-24 3.441406v-203.441406c0-31.519531-64.398438-48-128-48s-128 16.480469-128 48v240c0 31.519531 64.398438 48 128 48 3.761719 0 7.519531-.078125 11.441406-.238281-.746094 11.273437 1.929688 22.511719 7.679688 32.238281h-11.121094c-30.929688 0-56 25.070312-56 56s25.070312 56 56 56h288c30.929688 0 56-25.070312 56-56s-25.070312-56-56-56zm-296-352c68.398438 0 112 18.960938 112 32s-43.601562 32-112 32-112-18.960938-112-32 43.601562-32 112-32zm-112 56.480469c23.039062 15.519531 67.679688 23.519531 112 23.519531s88.960938-8 112-23.519531v55.519531c0 13.039062-43.601562 32-112 32s-112-18.960938-112-32zm0 80c23.039062 15.519531 67.679688 23.519531 112 23.519531s88.960938-8 112-23.519531v55.519531c0 13.039062-43.601562 32-112 32s-112-18.960938-112-32zm126.878906 167.121093c-5.117187.238282-10.078125.398438-14.878906.398438-68.398438 0-112-18.960938-112-32v-55.519531c23.039062 15.519531 67.679688 23.519531 112 23.519531s88.960938-8 112-23.519531v25.121093c-12.539062 6.4375-23.347656 15.792969-31.519531 27.277344-27.554688-7.109375-55.984375 7.941406-65.601563 34.722656zm281.121094 144.398438h-288c-22.089844 0-40-17.910156-40-40s17.910156-40 40-40h28.078125c3.253906.019531 6.191406-1.929688 7.4375-4.933594 1.246094-3 .550781-6.457031-1.753906-8.746094l-2.882813-2.878906c-13.308594-13.273437-15.5625-34.027344-5.410156-49.84375 10.15625-15.816406 29.964844-22.414062 47.570312-15.835937 3.574219 1.332031 7.59375-.039063 9.601563-3.28125 13.035156-21.410157 36.292969-34.476563 61.359375-34.476563s48.324219 13.066406 61.359375 34.476563c2.007813 3.242187 6.027344 4.613281 9.601563 3.28125 17.605468-6.578125 37.414062.019531 47.570312 15.835937 10.152344 15.816406 7.898438 36.570313-5.410156 49.84375l-2.882813 2.878906c-2.304687 2.289063-3 5.746094-1.753906 8.746094 1.246094 3.003906 4.183594 4.953125 7.4375 4.933594h28.078125c22.089844 0 40 17.910156 40 40s-17.910156 40-40 40zm0 0" fill="#1a6fb0" data-original="#1a6fb0" style="" class=""/></g></g></svg>
+			<!-- section_1: Intro -->
+			<script src="./pages/1_introduction/introduction.js"></script>
 
-												</i>
-												<div class="media-body">
-													<h3>SQL/ PostgreSQL</h3>
-													<p>Relational database used to manipulate data. PostgreSQL was used for my full-stack project</p>		
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>		            		          
-						</div>       		          	
-					</section>
+			<!-- section_2: Skills -->
+			<section id="tm-section-3" class="tm-section skill_page tm-section-carousel">						
+				<div class="row mb-4">
+					<header class="col-xl-12"><h2 class="tm-text-shadow">Skills</h2></header>		
+				</div>
+					<div class="tm-img-container"> 
+						<div class="tm-img-slider"> <!-- BUG this div somehow effects skills and projects, the leading solution is to close this div </div>-->
+						<div class="row" style=" display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: auto; margin-left: 19px; display:-ms-flexbox;"> <!-- rows are cols and for each coral section, only 4 can be maintained--> 
+							<script src="./pages/2_skills/reactSkills.js"></script>	
+							<script src="./pages/2_skills/jsSkills.js"></script>
+							<script src="./pages/2_skills/pySkills.js"></script>	
+							<script src="./pages/2_skills/nodeJsSkills.js"></script>	
+						</div>  	
+						<!-- NOTE important: the skills you will want to show case is the following: React/Redux, JavaScript, p5.Js, NodeJs, Python, Flask, SQL, and Django-->				
+						<div class="row">  
+							<script src="./pages/2_skills/p5jsSkills.js"></script>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4"> <!-- NOTE it is not clear why this div needs to be here RFE investigate this--> <!-- RVD 4--> 
+								<script src="./pages/2_skills/flaskSkills.js"></script>
+								<script src="./pages/2_skills/sqlSkills.js"></script>
+								<script src="./pages/2_skills/sqlSkills.js"></script>
+							</div>  
+						</div> 
+					</div>	            		          
+			</section>
+								
+			<!-- section 3 -->
+				<section id="tm-section-2" class="tm-section tm-section-carousel">
+					<script src="./pages/3_projects/projects.js"></script>	            		                		          	
+				</section>
 
-					<!-- section 3 -->
-					<section id="tm-section-2" class="tm-section tm-section-carousel">
-						<div>
-							<header class="mb-4"><h2 class="tm-text-shadow">Projects</h2></header>		            
-							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<p class="tm-slider-img">
-										<img href="img/JSX_Screen_Shot.jpg"src="img/JSX_Screen_Shot.jpg" alt="Image" class="img-fluid jsx">
-										<a href="https://jsx-space-time.herokuapp.com/#/" target="_blank" class = 'live-links'>Live Site</a>
-									</p>
-									<p class="tm-slider-img">
-										<img href="img/MERN_Screen_Shot.png" src="img/MERN_Screen_Shot.png" alt="Image" class="img-fluid MERN">
-										<a href="https://muse-of-wire.herokuapp.com" target="_blank" class = 'live-links'>Live Site</a>
-									</p>
-									<p class="tm-slider-img">
-										<img href="img/Physics_JS_Screen_Shot.png" src="img/Physics_JS_Screen_Shot.png" alt="Image" class="img-fluid Physics_JS">
-										<a href="https://zombie1864.github.io/Physics_JS/" target="_blank" class = 'live-links physics_link'>Live Site</a>
-									</p>
-								</div>
-							</div>		            		          
-						</div>       		          	
-					</section>
-
-					<!-- section 4 -->
-					<section id="tm-section-4" class="tm-section" >
-						<div class="tm-bg-transparent-black tm-contact-box-pad" id = 'contact_me_container'>
-							<div class="row mb-4">
-								<div class="col-sm-12">
-									<header><h2 class="tm-text-shadow">Contact Me</h2></header>
-								</div>
-							</div>
-							<div class="row tm-page-4-content">
-								<div class="col-md-6 col-sm-12 tm-contact-col">
-									<div class="contact_message">
-										<form action="#contact" method="post" 		
-											class="contact-form">
-											<div class="form-group">
-												<p class="form-control">Email: Jvarela1864@gmail.com</p>
-											</div>
-											<div class="form-group">
-												<p class="form-control">Phone: (347)-854-4668</p>
-											</div>
-											<div class="form-group">
-												<p class="form-control">Location: New York, NY or Remote</p>
-											</div>
-												<a href="https://www.linkedin.com/in/jeff-varela-a3194692/" target="_blank" id = 'linkedin_contact' class = 'contact_links'>
-													<i class="tm-icon-circled tm-icon-media">
-														<?xml version="1.0"?>
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="96px" x="0" y="0" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
-														<g xmlns="http://www.w3.org/2000/svg">
-															<circle style="--darkreader-inline-fill:#004e76;" cx="56.098" cy="56.097" r="56.098" fill="#007ab9" data-original="#007ab9" data-darkreader-inline-fill=""/>
-															<g>
-																<path style="--darkreader-inline-fill:#1a1b1d;" d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118    c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715    c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662    C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967    c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z     M27.865,83.739H41.27V43.409H27.865V83.739z" fill="#f1f2f2" data-original="#f1f2f2" data-darkreader-inline-fill=""/>
-															</g>
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														</g></svg>
-													</i>
-												</a>
-												<a href="https://github.com/zombie1864" target = '_blank' id = 'github_contact' class = 'contact_links'>
-													<i class="tm-icon-circled tm-icon-media">
-														<?xml version="1.0"?>
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="96px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
-														<path xmlns="http://www.w3.org/2000/svg" style="--darkreader-inline-fill:#2a336c;" d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872  c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464  c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496  c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368c-56.832-6.496-116.608-28.544-116.608-127.008  c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68c0,0,21.504-6.912,70.4,26.336  c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672c48.864-33.248,70.336-26.336,70.336-26.336  c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992c0,98.72-59.84,120.448-116.864,126.816  c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496c0,6.88,4.608,14.88,17.6,12.352  C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z" fill="#ffffff" data-original="#ffffff" data-darkreader-inline-fill=""/>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														<g xmlns="http://www.w3.org/2000/svg">
-														</g>
-														</g></svg>
-													</i>
-												</a>
-												<a href="https://angel.co/u/jeff-varela" target="_blank" id = 'angel_contact' class = 'contact_links'>
-													<i class="tm-icon-circled tm-icon-media">
-														<svg href="https://angel.co/u/jeff-varela" target="_blank"xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="96px" height="96px"><path fill="#FFF" d="M8.5,36.3c1,3,4.1,6.3,7.2,7.5c2.4,1,5,1.4,7.6,1.1c2-0.2,3.8-0.7,5.4-1.5c3.3-1.7,5.6-4.3,7-7.9c0.6-1.6,1-3.4,1.1-5.5c0.1-1.6,0.1-3-0.2-4.3c-0.2-0.9-0.4-1.6-0.8-2.2c-0.5-0.7-1.3-1.2-2.6-1.6l-1.7-0.5l1.3-3.7c0.7-1.9,1.3-3.8,1.9-5.7c0.5-1.5,1-3.2,1.2-4.9c0.1-1.1-0.1-1.9-0.6-2.6c-0.4-0.4-0.9-0.7-1.5-0.8c-0.5,0-0.9,0.1-1.3,0.5c-0.2,0.2-0.4,0.4-0.6,0.6c-1.1,1.4-1.9,2.9-2.5,4.2c-1,2-1.8,4.3-2.8,7.2c-0.1,0.5-0.3,0.9-0.5,1.3l-0.7,1.9l-1.1-0.9c-0.3-0.2-0.4-0.5-0.5-0.7l-0.6-1.9c-1-2.8-2-5.8-3.3-8.5c-0.6-1.2-1.3-2.5-2.2-3.7c-0.4-0.6-0.7-0.8-1.1-0.9c-0.8-0.2-1.9,0.1-2.4,1.3C14.1,5.2,14,6,14.2,6.9c0.3,1.5,0.6,2.7,1,3.8c0.7,2.2,1.4,4.4,2.2,6.6l2,6.1l-2.7-1.7c-0.4-0.3-0.9-0.4-1.3-0.4c-0.1,0-0.2,0-0.2,0c-0.9,0.1-1.7,0.5-2.5,1.4c-0.8,0.9-0.9,1.7-0.5,2.8l1,2.5l-2,0.6c-1.7,0.5-2.7,1.6-2.9,3.3C7.9,33.3,8,34.7,8.5,36.3z"/><path fill="#455A64" d="M11.7,27.5c-0.2-0.5-0.4-1-0.6-1.5c-0.5-1.4-0.3-2.7,0.7-3.8c0.8-0.9,1.8-1.6,3.1-1.7c0.8-0.1,1.5,0.1,2.1,0.5c0.1,0.1,0.2,0.1,0.4,0.2c-0.1-0.3-0.2-0.5-0.3-0.8c-1-3.1-2.1-6.2-3.1-9.3c-0.4-1.3-0.7-2.6-1-3.9C13,6,13.1,4.9,13.5,3.9c0.8-1.7,2.3-2.1,3.5-1.9c0.8,0.2,1.3,0.7,1.7,1.3c0.9,1.2,1.6,2.5,2.3,3.9c1.4,2.8,2.4,5.8,3.4,8.8c0.2,0.6,0.4,1.1,0.6,1.7c0,0.1,0.1,0.1,0.2,0.2c0.2-0.6,0.5-1.2,0.7-1.9c0.8-2.5,1.7-5,2.9-7.3c0.7-1.5,1.5-3.1,2.6-4.4C31.5,4,31.8,3.8,32,3.6c1.4-1.3,3.3-0.9,4.2,0.3c0.8,1,1,2.1,0.9,3.3c-0.2,1.7-0.7,3.4-1.2,5.1C35,15,34,17.7,33.1,20.4c0,0.1-0.1,0.2-0.1,0.3c0.2,0.1,0.4,0.1,0.6,0.2c1.2,0.4,2.4,0.9,3.1,2c0.5,0.8,0.8,1.7,1,2.6c0.3,1.5,0.3,3,0.2,4.5c-0.1,2-0.5,4-1.2,5.8c-1.5,3.7-3.9,6.6-7.5,8.4c-1.8,0.9-3.8,1.5-5.8,1.6c-2.8,0.3-5.5-0.1-8.1-1.2c-3.4-1.4-6.8-4.9-7.8-8.1c-0.5-1.6-0.7-3.1-0.5-4.8c0.3-2.1,1.6-3.5,3.6-4.1C11,27.6,11.4,27.6,11.7,27.5z M11.2,33.1c0.1,0.2,0.3,0.3,0.4,0.5c0.5,0.6,0.9,1.2,1.4,1.8c0.6,0.7,1.2,1.4,2,1.7c0.7,0.3,1.3,0.3,2,0c0.6-0.3,0.7-0.7,0.6-1.3c-0.1-0.2-0.2-0.4-0.3-0.6c-0.7-1.4-1.6-2.7-2.7-3.8c-0.6-0.6-1.1-1.2-1.8-1.7c-0.6-0.5-1.2-0.5-1.8-0.1c-0.9,0.6-1.5,1.4-1.8,2.5c-0.3,1.1-0.1,2.2,0.3,3.2c1,2.7,2.7,4.9,5.1,6.4c3.6,2.3,7.5,2.8,11.5,1.5c4.6-1.5,7.5-4.8,9.1-9.3c0.7-1.9,0.8-4,0.8-6c0-1-0.1-2-0.4-2.9c-0.3-0.8-0.8-1.5-1.6-1.9c-0.5-0.2-0.9-0.4-1.4-0.6c-3.1-1.1-6.3-1.4-9.5-1.7c-0.7,0-1.3,0-2,0.2c-0.5,0.2-0.9,0.5-0.9,1.1c-0.1,1.2,0.3,2.2,1.3,2.9c0.7,0.5,1.6,0.8,2.5,1c2,0.4,4.1,0.4,6.2,0.4c0.5,0,0.9,0,1.4,0.1c0.5,0.1,0.6,0.5,0.7,1c0.1,0.4-0.2,0.6-0.5,0.7c-0.6,0.3-1.1,0.5-1.7,0.7c-2.4,0.9-4.2,2.5-5.5,4.7c-0.9,1.6-1.2,3.3-0.5,5.1c0.2,0.4,0.3,0.8,0.4,1.3c0.1,0.4,0.2,0.9,0.1,1.4c-1-0.2-1.6-0.7-2.1-1.5c-0.4-0.8-0.6-1.7-0.7-2.6c-0.1-0.5-0.1-1-0.1-1.5c-0.6,0.4-1.3,0.3-2,0.2c0,0.2,0.1,0.3,0.1,0.4c0.3,1.2-0.2,2.3-1.2,3c-0.8,0.6-1.8,0.6-2.7,0.4c-1.6-0.4-2.8-1.4-3.8-2.7c-0.5-0.7-1-1.5-1.1-2.3C10.7,34,10.7,33.6,11.2,33.1z M23.2,19.2c0,0,0-0.1,0-0.1c-0.9-2.7-1.8-5.5-2.8-8.2c-0.6-1.7-1.3-3.5-2-5.2c-0.2-0.5-0.5-1-1-1.4C16.5,3.7,15.5,4,15.2,5c-0.1,0.4-0.2,0.8-0.1,1.2c0,1.2,0.3,2.3,0.7,3.4c1.2,3.3,2.3,6.6,3.5,9.9c0,0,0,0,0,0C20.5,18.7,21.9,19.2,23.2,19.2z M30.8,20.3c0-0.1,0.1-0.1,0.1-0.2c1.4-3.8,2.7-7.6,3.9-11.5c0.2-0.8,0.4-1.5,0.3-2.4c-0.1-0.8-0.6-1.2-1.2-1.3c-0.5,0-1,0.2-1.3,0.6c-0.6,0.7-1,1.5-1.3,2.3c-1.6,3.8-2.8,7.7-4.1,11.6c0,0,0,0.1,0,0.2C28.3,19.8,29.5,20,30.8,20.3z M21.7,32.3c0-0.2,0-0.4-0.1-0.6c-0.3-0.7-0.5-1.4-0.8-2.2c-0.8-1.9-1.8-3.8-3.1-5.5c-0.4-0.5-0.9-1-1.5-1.3c-1.3-0.6-3.2,0.6-3.1,2.1c0,0,0,0.1,0,0.1c0.2,0.5,0.3,1.1,0.5,1.6c1.1,2.2,2.6,4.1,4.3,5.9c0.5,0.5,1.1,1,1.8,1.3C20.7,34.1,21.7,33.4,21.7,32.3z M23.6,31.3c0.8-1.2,1.9-2,3.1-2.9c-1.6-0.1-3.1-0.3-4.5-0.8C22.6,28.8,23.1,30,23.6,31.3z"/></svg>						
-													</i>
-												</a>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12 tm-contact-col">
-									<div class="tm-address-box">
-										<p>
-											Thank you for exploring my portfolio. You have now reach the end of this endeavor. The contact page will provide you methods in which to reach out to me. Click on one of the social link icons to read more about my works as a software engineer or check out my 
-											<a href="img/Jeff_Varela_Resume.pdf" target="_blank" class = 'resume_contact' data-text = 'resume!'>resume!</a>
-										</p>
-									</div>
-								</div>
-							</div>
+			<!-- section 4 -->
+				<section id="tm-section-4" class="tm-section" >
+					<div class="tm-bg-transparent-black tm-contact-box-pad" id = 'contact_me_container'>
+						<script src="./pages/4_contact/contactMeHeader.js"></script>
+						<div class="row tm-page-4-content">
+							<script src="./pages/4_contact/contactInfoForm.js"></script>
+							<script src="./pages/4_contact/linkedInIcon.js"></script>
+							<script src="./pages/4_contact/githubIcon.js"></script>
+							<script src="./pages/4_contact/angleListIcon.js"></script>
 						</div>
-					</section>					
-				</div>	<!-- .tm-content -->							
-				<footer class="footer-link">
-					<p class="tm-copyright-text">Copyright &copy; 2018 Constructive Co. Ltd. 
-                    
-                    - Design: Tooplate</p>
-				</footer>
-			</div>	<!-- row -->			
-		</div>
-		<div id="preload-01"></div>
-		<div id="preload-02"></div>
-		<div id="preload-03"></div>
-		<div id="preload-04"></div>
-
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
-
-		<script>
-
-		var sidebarVisible = false;
-		var currentPageID = "#tm-section-1";	
-		  
-		  // Setup Carousel
-		function setupCarousel() {
-
-			// If current page isn't Carousel page, don't do anything.
-			if($('#tm-section-3').css('display') == "none" && $('#tm-section-2').css('display') == "none") {
-			}
-			else {	// If current page is Carousel page, set up the Carousel.
-
-				var slider = $('.tm-img-slider');
-				var windowWidth = $(window).width();
-
-				if (slider.hasClass('slick-initialized')) {
-					slider.slick('destroy');
-				}
-
-				if(windowWidth < 640) {
-					slider.slick({
-	              		dots: true,
-	              		infinite: true,
-	              		slidesToShow: 1,
-	              		slidesToScroll: 1
-	              	});
-				}
-				else if(windowWidth < 992) {
-					slider.slick({
-	              		dots: true,
-	              		infinite: true,
-	              		slidesToShow: 1,
-	              		slidesToScroll: 1
-	              	});
-				}
-				else {
-					// Slick carousel
-	              	slider.slick({
-	              		dots: true,
-	              		infinite: true,
-	              		slidesToShow: 1,
-	              		slidesToScroll: 1
-	              	});
-				}
-
-				// Init Magnific Popup
-				$('.tm-img-slider').magnificPopup({
-				  delegate: 'img', // child items selector, by clicking on it popup will open
-				  type: 'image',
-				  gallery: {enabled:true}
-				  // other options
-				});
-      		}
-  		}
-
-  		// Setup Nav
-  		function setupNav() {
-  			// Add Event Listener to each Nav item
-	     	$(".tm-main-nav a").click(function(e){
-	     		e.preventDefault();
-		    	
-		    	var currentNavItem = $(this);
-		    	changePage(currentNavItem);
-		    	
-		    	setupCarousel();
-		    	setupFooter();
-
-		    	// Hide the nav on mobile
-		    	$("#tmSideBar").removeClass("show");
-		    });	    
-  		}
-
-  		function changePage(currentNavItem) {
-  			// Update Nav items
-  			$(".tm-main-nav a").removeClass("active");
-     		currentNavItem.addClass("active");
-
-	    	$(currentPageID).hide();
-
-	    	// Show current page
-	    	currentPageID = currentNavItem.data("page");
-	    	$(currentPageID).fadeIn(1000);
-
-	    	// Change background image
-	    	var bgImg = currentNavItem.data("bgImg");
-	    	$.backstretch("img/" + bgImg);		    	
-  		}
-
-  		// Setup Nav Toggle Button
-  		function setupNavToggle() {
-
-			$("#tmMainNavToggle").on("click", function(){
-				$(".sidebar").toggleClass("show");
-			});
-  		}
-
-  		// If there is enough room, stick the footer at the bottom of page content.
-  		// If not, place it after the page content
-  		function setupFooter() {
-  			
-  			var padding = 100;
-  			var footerPadding = 40;
-  			var mainContent = $("section"+currentPageID);
-  			var mainContentHeight = mainContent.outerHeight(true);
-  			var footer = $(".footer-link");
-  			var footerHeight = footer.outerHeight(true);
-  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
-  			var windowHeight = $(window).height();		
-
-  			if(totalPageHeight > windowHeight){
-  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
-  				footer.css("bottom", footerHeight + "px");  			
-  			}
-  			else {
-  				$(".tm-content").css("margin-bottom", "0");
-  				footer.css("bottom", "20px");  				
-  			}  			
-  		}
-
-  		// Everything is loaded including images.
-      	$(window).on("load", function(){
-
-      		// Render the page on modern browser only.
-      		if(renderPage) {
-				// Remove loader
-		      	$('body').addClass('loaded');
-
-		      	// Page transition
-		      	var allPages = $(".tm-section");
-
-		      	// Handle click of "Continue", which changes to next page
-		      	// The link contains data-nav-link attribute, which holds the nav item ID
-		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
-		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
-			    
-			    if(linkToAnotherPage != null) {
-			    	
-			    	linkToAnotherPage.on("click", function(){
-			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
-			    		$("a" + navItemToHighlight).click();
-			    	});
-			    }
-		      	
-		      	// Hide all pages
-		      	allPages.hide();
-
-		      	$("#tm-section-1").fadeIn();
-
-		     	// Set up background first page
-		     	var bgImg = $("#tmNavLink1").data("bgImg");
-		     	
-		     	$.backstretch("img/" + bgImg, {fade: 500});
-
-		     	// Setup Carousel, Nav, and Nav Toggle
-			    setupCarousel();
-			    setupNav();
-			    setupNavToggle();
-			    setupFooter();
-
-			    // Resize Carousel upon window resize
-			    $(window).resize(function() {
-			    	setupCarousel();
-			    	setupFooter();
-			    });
-      		}	      	
-		});
-
-		</script>
+						<script src="./pages/4_contact/thankYouMsg.js"></script>
+					</div>
+				</section>					
+		</div>	<!-- .tm-content -->							
+		<script src="./utils/footer.js"></script>
 	</body>
 </html>
