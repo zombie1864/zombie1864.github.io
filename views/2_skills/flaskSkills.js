@@ -6,7 +6,7 @@ document.write(`
 </i>
     <div class="media-body">
         <h3>Flask</h3>
-        <p>Backend framework to deploy server with API endpoints. Large scale leads to performance issues.</p>		
+        <p>Backend framework to deploy server with API endpoints. Large scale leads to performance issues. Ideal for quick deployment of servers</p>		
     </div>
 </div>
 </div>
