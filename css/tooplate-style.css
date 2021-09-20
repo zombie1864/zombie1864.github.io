@@ -84,45 +84,37 @@ p:last-child { margin-bottom: 0; }
 
 .tm-font-big { font-size: 1.1vw; }
 
-.row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: auto;
-    margin-left: auto;
-    display:-ms-flexbox;
-}
 
 #react {
-    background-color: #000000c4;
+    background-color: #000000d3;
 }
 
 #js {
-    background-color: #000000c4;
+    background-color: #000000d3;
 }
 
-#ruby {
-    background-color: #000000c4;
+#python {
+    background-color: #000000d3;
 }
 
-#html {
-    background-color: #000000c4;
+#p5 {
+    background-color: #000000d3;
 }
 
-#css {
-    background-color: #000000c4;
+#flask {
+    background-color: #000000d3;
 }
 #SQL {
     position: relative;
-    top: -464px;
+    top: -498px;
     right: -480px;
-    background-color: #000000c4;
+    background-color: #000000d3;
 }
 
 #node {
-    background-color: #000000c4;
+    background-color: #000000d3;
 }
+
 
 .tm-main {
     height: 100%;

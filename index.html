@@ -19,52 +19,49 @@
 		<script src="./utils/sideBar.js"></script>
 		
 		<!-- content -->
-		<div id="section1" class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">		
-			
+		<div id="section1" class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
 			<!-- section_1: Intro -->
-			<script src="./pages/1_introduction/introduction.js"></script>
+			<script src="./views/1_introduction/introduction.js"></script>
 
 			<!-- section_2: Skills -->
-			<section id="tm-section-3" class="tm-section skill_page tm-section-carousel">						
+			<section id="tm-section-3" class="tm-section skill_page tm-section-carousel">		
 				<div class="row mb-4">
-					<header class="col-xl-12"><h2 class="tm-text-shadow">Skills</h2></header>		
+					<header class="col-xl-12"><h2 class="tm-text-shadow">Skills</h2></header>
 				</div>
-					<div class="tm-img-container"> 
-						<div class="tm-img-slider"> <!-- BUG this div somehow effects skills and projects, the leading solution is to close this div </div>-->
-						<div class="row" style=" display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: auto; margin-left: 19px; display:-ms-flexbox;"> <!-- rows are cols and for each coral section, only 4 can be maintained--> 
-							<script src="./pages/2_skills/reactSkills.js"></script>	
-							<script src="./pages/2_skills/jsSkills.js"></script>
-							<script src="./pages/2_skills/pySkills.js"></script>	
-							<script src="./pages/2_skills/nodeJsSkills.js"></script>	
-						</div>  	
-						<!-- NOTE important: the skills you will want to show case is the following: React/Redux, JavaScript, p5.Js, NodeJs, Python, Flask, SQL, and Django-->				
-						<div class="row">  
-							<script src="./pages/2_skills/p5jsSkills.js"></script>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4"> <!-- NOTE it is not clear why this div needs to be here RFE investigate this--> <!-- RVD 4--> 
-								<script src="./pages/2_skills/flaskSkills.js"></script>
-								<script src="./pages/2_skills/sqlSkills.js"></script>
-								<script src="./pages/2_skills/sqlSkills.js"></script>
-							</div>  
-						</div> 
-					</div>	            		          
+				<div class="tm-img-container"> 
+				<div class="tm-img-slider">
+					<div class="row" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: auto; margin-left: 19px; display:-ms-flexbox;"> <!-- rows are cols and for each coral section, only 4 can be maintained--> 
+						<script src="./views/2_skills/reactSkills.js"></script>	
+						<script src="./views/2_skills/jsSkills.js"></script>
+						<script src="./views/2_skills/p5jsSkills.js"></script>
+						<script src="./views/2_skills/nodeJsSkills.js"></script>	
+					</div>  					
+					<div class="row" >  
+						<script src="./views/2_skills/pySkills.js"></script>	
+						<script src="./views/2_skills/flaskSkills.js"></script>
+						<script src="./views/2_skills/sqlSkills.js"></script>
+						<script src="./views/2_skills/sqlSkills.js"></script> <!--Django-->
+					</div> 
+				</div>
+				</div>	            		                   		          
 			</section>
 								
 			<!-- section 3 -->
 				<section id="tm-section-2" class="tm-section tm-section-carousel">
-					<script src="./pages/3_projects/projects.js"></script>	            		                		          	
+					<script src="./views/3_projects/projects.js"></script>	            		                		          	
 				</section>
 
 			<!-- section 4 -->
 				<section id="tm-section-4" class="tm-section" >
 					<div class="tm-bg-transparent-black tm-contact-box-pad" id = 'contact_me_container'>
-						<script src="./pages/4_contact/contactMeHeader.js"></script>
+						<script src="./views/4_contact/contactMeHeader.js"></script>
 						<div class="row tm-page-4-content">
-							<script src="./pages/4_contact/contactInfoForm.js"></script>
-							<script src="./pages/4_contact/linkedInIcon.js"></script>
-							<script src="./pages/4_contact/githubIcon.js"></script>
-							<script src="./pages/4_contact/angleListIcon.js"></script>
+							<script src="./views/4_contact/contactInfoForm.js"></script>
+							<script src="./views/4_contact/linkedInIcon.js"></script>
+							<script src="./views/4_contact/githubIcon.js"></script>
+							<script src="./views/4_contact/angleListIcon.js"></script>
 						</div>
-						<script src="./pages/4_contact/thankYouMsg.js"></script>
+						<script src="./views/4_contact/thankYouMsg.js"></script>
 					</div>
 				</section>					
 		</div>	<!-- .tm-content -->							

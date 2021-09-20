@@ -1,5 +1,6 @@
 document.write(`
-<div class="media tm-bg-transparent-black tm-border-white" id="css">
+<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4"> <!-- Add this-->
+<div class="media tm-bg-transparent-black tm-border-white" id="flask">
 <i class="tm-icon-circled tm-icon-media">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="112" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve">
         <g>
@@ -15,7 +16,7 @@ document.write(`
         </svg>
     </i>
     <div class="media-body">
-        <h3 style="color:orangered">THIS NEEDS TO BE FLASK</h3>
+        <h3 style="color:orangered">Flask</h3>
         <p>Stylesheet used for my fullstack, MERN, and javascript projects. Aids in manipulating website content</p>		
     </div>
 </div>

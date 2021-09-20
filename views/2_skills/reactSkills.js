@@ -1,5 +1,5 @@
 document.write(`
-<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4" id = 'outerBoxInvicibleContainingSkill'>
+<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 <div class="media tm-bg-transparent-black tm-border-white" id = 'react'>
     <i class="tm-icon-circled tm-icon-media" id = 'theCircleContainingImgInside'>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="90" height="90" x="0" y="0" viewBox="0 0 820 612"  xml:space="preserve" class="yes1">
@@ -11,8 +11,9 @@ document.write(`
     </i>
     <div class="media-body">
         <h3>React / Redux</h3>
-            <p>Frontend developement skill for UI friendly experience in making a dynamic websites. Used for all my technical projects.</p>	
+            <p>Frontend library for developing UI components making websites dynamic and responsive without page refresh. Use of Virtual DOM.</p>	
     </div>
 </div>
 </div>
 `)
+// RVD 9/20/21 

@@ -4,8 +4,10 @@ document.write(`
     <i class="fab fa-js-square tm-icon-circled tm-icon-media"></i>
     <div class="media-body">
         <h3>JavaScript</h3>
-        <p>Frontend language used to built the logisics of a website. I have also used Nodejs for backend developement.</p>	
+        <p>Frontend language used to built the logisics of a website. All browsers use javascript to manipulation and/or collect data.</p>	
     </div>
 </div>
 </div>
 `)
+
+// RVD 9/20/21
