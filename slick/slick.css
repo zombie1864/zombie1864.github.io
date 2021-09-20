@@ -20,18 +20,10 @@
 
 .slick-list
 {
-    position: relative;
-
-    display: block;
     overflow: hidden;
+    padding: 20px 0px;
+}
 
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
 .slick-list.dragging
 {
     cursor: pointer;
