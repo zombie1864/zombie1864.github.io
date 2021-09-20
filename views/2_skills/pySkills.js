@@ -5,8 +5,8 @@ document.write(`
         <img src="/Users/jeff/Desktop/App_Academy/zombie1864.github.io/img/python.jpg" width=80 height =80 style="border-radius:50%">
     </i>
     <div class="media-body">
-        <h3 style="color:orangered">Python</h3>
-        <p style="color:orangered">Frontend language used to built the logisics of a website. I have also used Nodejs for backend developement.</p>	
+        <h3>Python</h3>
+        <p>Dynamically typed language for building software. Popular use for backend codebase and data science applications with wide use in academic. </p>	
     </div>
 </div>
 </div>

@@ -18,7 +18,7 @@ document.write(`
     </i>
     <div class="media-body">
         <h3>NodeJS</h3>
-        <p>Backend framework that runs javascript outside the browser. Used for my MERN stack project.</p>	
+        <p>Backend framework that runs javascript outside the browser. Able to establish RESTful API for HTTP lifecycle.</p>	
     </div>
 </div>
 </div>	

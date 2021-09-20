@@ -7,7 +7,7 @@ document.write(`
             </i>
             <div class="media-body">
                 <h3>SQL/ PostgreSQL</h3>
-                <p>Relational database used to manipulate data. PostgreSQL was used for my full-stack project blah blah blah blah blah blahblah </p>		
+                <p>Relational database used to store data. Usually coupled with a server to propagte data from backend to frontend.</p>		
             </div>
         </div>
     </div>

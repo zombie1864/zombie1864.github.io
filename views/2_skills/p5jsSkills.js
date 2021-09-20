@@ -5,8 +5,8 @@ document.write(`
         <img src="/Users/jeff/Desktop/App_Academy/zombie1864.github.io/img/p5.png" width=80 height =80 style="border-radius:50%">
     </i>	
     <div class="media-body">
-        <h3 style="color:orangered">p5.JS</h3>
-        <p>Frontend markup language used for my fullstack, MERN, and javascript projects.</p>	
+        <h3>p5.JS</h3>
+        <p>Javascript library for data visualization of graphs, canvas, audio, etc. Great for mathematical visual emulation</p>	
     </div>
 </div>
 </div>
